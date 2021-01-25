@@ -3,15 +3,15 @@ params = {
     'eval_metric': 'AUC',
     'thread_count': -1,
     'task_type': 'CPU', #  if get_gpu_device_count() > 0 else 'CPU',
-    # 'task_type': 'GPU' if torch.cuda.is_available() else 'CPU',
+    # 'task_type': 'GPU', # if torch.cuda.is_available() else 'CPU',
     'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
-    'auto_class_weights': 'SqrtBalanced',
-    'langevin': True,  # CPU only
+    'auto_class_weights': None,
+    # 'langevin': True,  # CPU only
     'iterations': 25,
     'learning_rate': 4e-3,
     'l2_leaf_reg': 1e-1,
     'depth': 16,
-    # 'max_leaves': 10,
+    'max_leaves': 10,
     'border_count': 128,
     'verbose': 100,
     'od_type': 'Iter',
@@ -19,7 +19,7 @@ params = {
 
     # random control
     'bootstrap_type': 'Bayesian',
-    'random_seed': 0,
+    # 'random_seed': 0,
     'random_strength': 0.001,
     'rsm': 1,
     'bagging_temperature': 0,
