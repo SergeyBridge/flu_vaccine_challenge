@@ -4,12 +4,11 @@ params = {
     'thread_count': -1,
     'task_type': 'CPU', #  if get_gpu_device_count() > 0 else 'CPU',
     # 'task_type': 'GPU' if torch.cuda.is_available() else 'CPU',
-    'grow_policy': 'Lossguide',
-    'auto_class_weights': 'Balanced',
+    'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
+    'auto_class_weights': 'SqrtBalanced',
     'langevin': True,  # CPU only
-    'iterations': 25000,
+    'iterations': 25,
     'learning_rate': 4e-3,
-    'random_seed': 0,
     'l2_leaf_reg': 1e-1,
     'depth': 16,
     # 'max_leaves': 10,
@@ -19,9 +18,12 @@ params = {
     'od_wait': 100,
 
     # random control
+    'bootstrap_type': 'Bayesian',
+    'random_seed': 0,
     'random_strength': 0.001,
     'rsm': 1,
-
+    'bagging_temperature': 0,
+    'boosting_type': 'Plain',   # 'Ordered'
 }
 
 
@@ -35,7 +37,7 @@ ordinal = [
     'opinion_seas_vacc_effective',
     'opinion_seas_risk',
     'opinion_seas_sick_from_vacc',
-    'age_group',
+    # 'age_group',
     'education',
     'income_poverty',
     'household_adults',
