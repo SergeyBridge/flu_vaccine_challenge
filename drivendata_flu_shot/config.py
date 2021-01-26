@@ -7,7 +7,7 @@ params = {
     # 'task_type': 'GPU', # if torch.cuda.is_available() else 'CPU',
     'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
     # 'auto_class_weights': None,
-    'langevin': True,  # CPU only
+    # 'langevin': True,  # CPU only
     'iterations': 25000,
     'learning_rate': 4e-3,
     'l2_leaf_reg': 1e-1,
