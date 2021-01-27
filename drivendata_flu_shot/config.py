@@ -8,7 +8,7 @@ params = {
     'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
     # 'auto_class_weights': None,
     # 'langevin': True,  # CPU only
-    'iterations': 25000,
+    'iterations': 250,
     'learning_rate': 4e-3,
     'l2_leaf_reg': 1e-1,
     'depth': 16,
