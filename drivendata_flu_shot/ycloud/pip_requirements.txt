@@ -1,0 +1,4 @@
+catboost
+pyarrow==0.17.1
+bayesian-optimization
+category_encoders
