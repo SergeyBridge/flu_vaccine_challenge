@@ -8,9 +8,9 @@ params = {
     'task_type': 'CPU' if get_gpu_device_count() > 0 else 'CPU',
     # 'task_type': 'GPU', # if torch.cuda.is_available() else 'CPU',
     'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
-    'auto_class_weights': 'Balanced',
-    # 'langevin': True,  # CPU only
-    'iterations': 9000,
+    # 'auto_class_weights': 'Balanced',
+    'langevin': True,  # CPU only
+    'iterations': 20000,
     'learning_rate': 0.002,   # 4e-3,
     'l2_leaf_reg': 1e-1,
     'depth': 16,
