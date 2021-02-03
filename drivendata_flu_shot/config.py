@@ -10,7 +10,7 @@ params = {
     'grow_policy': 'Lossguide',   # 'SymmetricTree',  #  'Depthwise',
     # 'auto_class_weights': 'Balanced',
     'langevin': True,  # CPU only
-    'iterations': 20000,
+    'iterations': 2,
     'learning_rate': 0.002,   # 4e-3,
     'l2_leaf_reg': 1e-1,
     'depth': 16,
@@ -48,30 +48,30 @@ ordinal = [
     'household_children',
 ]
 
-categorical = [
-    'behavioral_antiviral_meds',
-    'behavioral_avoidance',
-    'behavioral_face_mask',
-    'behavioral_wash_hands',
-    'behavioral_large_gatherings',
-    'behavioral_outside_home',
-    'behavioral_touch_face',
-    'doctor_recc_h1n1',
-    'doctor_recc_seasonal',
-    'chronic_med_condition',
-    'child_under_6_months',
-    'health_worker',
-    'health_insurance',
-    'race',
-    'sex',
-    'marital_status',
-    'rent_or_own',
-    'employment_status',
-    'hhs_geo_region',
-    'census_msa',
-    'employment_industry',
-    'employment_occupation',
-]
+categorical = {
+    'behavioral_antiviral_meds': str,
+    'behavioral_avoidance': str,
+    'behavioral_face_mask': str,
+    'behavioral_wash_hands': str,
+    'behavioral_large_gatherings': str,
+    'behavioral_outside_home': str,
+    'behavioral_touch_face': str,
+    'doctor_recc_h1n1': str,
+    'doctor_recc_seasonal': str,
+    'chronic_med_condition': str,
+    'child_under_6_months': str,
+    'health_worker': str,
+    'health_insurance': str,
+    'race': str,
+    'sex': str,
+    'marital_status': str,
+    'rent_or_own': str,
+    'employment_status': str,
+    'hhs_geo_region': str,
+    'census_msa': str,
+    'employment_industry': str,
+    'employment_occupation': str,
+}
 
 ordinal_to_replace = {
     # age_groups

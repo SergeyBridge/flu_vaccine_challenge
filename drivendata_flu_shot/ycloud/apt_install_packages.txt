@@ -11,3 +11,4 @@ libasound2
 libxi6
 libxtst6
 
+screen
