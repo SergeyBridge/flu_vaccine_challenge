@@ -30,7 +30,7 @@ import config
 # plt.style.use("dark_background")
 # plt.rcParams['figure.figsize'] = (20, 15)
 
-os.chdir(Path.cwd()/'home_works'/'1. Auto_ML'/'drivendata_flu_shot')
+# os.chdir(Path.cwd()/'home_works'/'1. Auto_ML'/'drivendata_flu_shot')
 
 print(Path.cwd())
 
